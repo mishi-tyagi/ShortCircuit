@@ -1,0 +1,27 @@
+[build-system]
+requires = ["setuptools>=45", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "crisis-dispatch-env"
+version = "0.1.0"
+description = "Crisis Dispatcher OpenEnv — emergency dispatch under constraints"
+requires-python = ">=3.10"
+dependencies = [
+  "openenv-core[core]>=0.2.2",
+  "fastapi>=0.115.0",
+  "pydantic>=2.0.0",
+  "uvicorn[standard]>=0.24.0",
+  "websockets>=12.0",
+  "openai>=1.0.0",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=8.0.0"]
+
+[project.scripts]
+server = "crisis_dispatch_env.server.app:main"
+
+[tool.setuptools]
+packages = ["crisis_dispatch_env", "crisis_dispatch_env.server"]
+package-dir = { "crisis_dispatch_env" = ".", "crisis_dispatch_env.server" = "server" }

@@ -1,0 +1,11 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(xargs cat:*)",
+      "Bash(chmod u+w \"/Users/nsrexe/Desktop/Scaler Hackathon/ShortCircuit/crisis_dispatcher/crisis_dispatch_env/server/\")",
+      "Bash(chmod u+w \"/Users/nsrexe/Desktop/Scaler Hackathon/ShortCircuit/crisis_dispatcher/.git\")",
+      "Bash(chmod u+w \"/Users/nsrexe/Desktop/Scaler Hackathon/ShortCircuit/crisis_dispatcher/.git/\"*)",
+      "Bash(chmod -R u+w \"/Users/nsrexe/Desktop/Scaler Hackathon/ShortCircuit/crisis_dispatcher/.git/\")"
+    ]
+  }
+}
